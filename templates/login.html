@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body class="logbody">
+    <h1>Login Page</h1>
+    {%with messages = get_flashed_messages()%}
+      {%if messages%}
+        <ul>
+            {%for message in messages%}
+            <li>{{messages}}</li>
+            {%endfor%}
+        </ul>
+      {%endif%}
+    {%endwith%}
+    <div class="logdiv">
+    <form action="" method="POST" >
+        <label for="">Username</label><br>
+        <input type="text" name="uname" required="1" placeholder="Enter user name"><br>
+        <label for="">password</label><br>
+        <input type="password" name="pword" required="1" placeholder="Enter your password"><br>
+
+        <input type="submit" value="login">
+    </form>
+    <a href="{{url_for('register')}}">Don't have an account? Sign Up</a>
+  </div>
+    
+</body>
+</html>

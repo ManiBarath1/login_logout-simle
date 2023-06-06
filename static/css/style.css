@@ -1,0 +1,37 @@
+.logbody{
+    background-image: url(../images/484717.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logdiv{
+    width: 350px;
+    height: 247px;
+    background-color: #272b2c8a;
+    padding: 25px;
+    margin: 0 auto;
+}
+.logbody h1{
+    text-align: center;
+    color: white;
+}
+.logdiv label{
+        color: white;
+        margin: auto;
+}
+.logdiv button{
+    padding: 13px 153px;
+    margin: 18px 0px;
+    background-color:#ff00a861;
+    color: white;
+}
+.ss{
+    text-align: center;
+}
+.logdiv a{
+    text-decoration: none;
+    color: white;
+}
+.logdiv form{
+    width: auto;
+    height: 200px;
+}
